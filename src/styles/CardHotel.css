@@ -1,0 +1,118 @@
+.card-hotel {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.card-hotel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-hotel h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.card-hotel p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card-hotel p span.label {
+  font-weight: bold;
+  color: #16a085;
+}
+
+.hotel-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hotel-image img:hover {
+  transform: scale(1.05);
+}
+
+.ver-mais-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #2980b9;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ver-mais-btn:hover {
+  background-color: #3498db;
+  transform: translateY(-3px);
+}
+
+body.dark-mode .card-hotel {
+  background-color: #34495e;
+  border-color: #2c3e50;
+  color: #ecf0f1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .card-hotel h2,
+body.dark-mode .card-hotel p {
+  color: #ecf0f1;
+}
+
+body.dark-mode .ver-mais-btn {
+  background-color: #8e44ad;
+  color: white;
+}
+
+body.dark-mode .ver-mais-btn:hover {
+  background-color: #9b59b6;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.edit-icon svg {
+  stroke: #f1c40f;
+}
+
+.delete-icon svg {
+  stroke: #e74c3c;
+}
+
+.edit-icon:hover svg {
+  stroke: #f39c12;
+}
+
+.delete-icon:hover svg {
+  stroke: #c0392b;
+}
